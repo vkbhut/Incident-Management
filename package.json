@@ -1,0 +1,36 @@
+{
+  "name": "incident-management-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation framework for TenForce Incident Management",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "report": "allure generate ./allure-results -o ./allure-report && allure open ./allure-report",
+    "allure": "allure generate ./allure-results -o ./allure-report",
+    "monocart:report": "monocart show-report test-results/monocart-report/index.html",
+    "test": "playwright test --project=suite",
+    "local:test": "playwright test --project=local",
+    "local:test:ui": "playwright test --project=local --ui",
+    "sanity:test": "playwright test --project=sanity",
+    "sanity:test:ui": "playwright test --project=sanity --ui",
+    "regression:test": "playwright test --project=regression",
+    "regression:test:ui": "playwright test --project=regression --ui"
+  },
+  "keywords": [],
+  "author": "Utsav Pandya",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "1.60.0",
+    "@types/convert-excel-to-json": "^1.7.4",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "allure": "3.0.0-beta.9",
+    "allure-playwright": "2.5.0",
+    "convert-excel-to-json": "^1.7.0",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.21.0",
+    "eslint-plugin-playwright": "^2.2.0",
+    "monocart-reporter": "^2.15.1",
+    "typescript": "^5.7.3",
+    "winston": "^3.17.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "paths": {
+           "@pages/*":["./src/advantage/pages/*"],
+           "@uiConstants/*":["./src/advantage/constants/*"],
+           "@uiSteps/*":["./src/advantage/steps/*"],
+           "@asserts/*":["./src/framework/playwright/asserts/*"],
+           "@utils/*":["./src/framework/utils/*"],
+           "@base-test":["./src/framework/config/base-test"],
+           "framework/*":["./src/framework/*"]
+        },
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "strict": true,
+        "noEmit": true,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true
+    }
+}
